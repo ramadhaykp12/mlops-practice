@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# MLflow
+# Kita mengabaikan mlruns karena data eksperimen lokal bisa sangat besar
+# Hasil training di GitHub Actions sudah tersimpan di Artifact
+mlruns/
+mlruns.db
+
+# Model & Data
+# Jangan push file model (binary) ke Git agar repo tetap ringan
+*.pkl
+*.joblib
+*.h5
+
+# Dataset (Opsional)
+# Jika kamu menggunakan DVC, file data asli harus di-ignore
+# data/iris.csv
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS & IDE
+.DS_Store
+.vscode/
+.idea/
+.env
