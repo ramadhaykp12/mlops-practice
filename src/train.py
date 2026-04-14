@@ -12,7 +12,7 @@ def run_train():
     
     with mlflow.start_run():
         # Load Data
-        df = pd.read_csv('data/iris.csv')
+        df = pd.read_csv('data/Iris.csv')
         X = df.drop('species', axis=1)
         y = df['species']
         
